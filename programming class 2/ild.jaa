@@ -1,0 +1,42 @@
+class Parent 
+{
+	static int a=40;
+	int b;
+	public static void demo() 
+	{
+
+	}
+
+	public static void temp()
+	{
+		
+	}
+}
+
+class Child
+{
+	int c;
+	static int d;
+
+	Child c=new Child();
+	Parent p=new Parent();
+	if(P instance of Parent)
+	{
+		Parent p1=p;
+	}
+
+	/*if(p instance of Child)
+	{
+		Child c1=(Child)p;
+	}*/
+
+	if(c insatnceof Child)
+	{
+		Child c2=c;
+	}
+
+	if(c instance of Parent)
+	{
+		Parent p2=c;
+	}
+}

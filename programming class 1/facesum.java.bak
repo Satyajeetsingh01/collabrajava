@@ -1,0 +1,24 @@
+class facesum 
+{
+	public static void main(String[] args) 
+	{
+		int num=234;
+		int sum=0;
+		while(num>0)
+		{
+			int temp=num%10;
+			int fact=1;
+			if(temp%2==0)
+			{
+				while(temp>0)
+				{
+					fact=fact*temp;
+					temp--;
+				}
+				sum=sum+fact;
+			}
+			num=num/10;
+		}
+		System.out.println(sum);
+	}
+}

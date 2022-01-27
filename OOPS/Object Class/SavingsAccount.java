@@ -1,0 +1,30 @@
+// Assignment 1
+class SavingsAccount 
+{
+	long account_no;
+	String name;
+	double balance;
+
+	SavingsAccount()
+	{
+	}
+
+	SavingsAccount(long account_no,String name,double balance)
+	{
+		this.account_no=account_no;
+		this.name=name;
+		this.balance=balance;
+	}
+
+	@Override
+	public String toString()
+	{
+		return account_no+"\n"+name+"\n"+balance;
+	}
+	
+	public static void main(String[] args) 
+	{
+		SavingsAccount s=new SavingsAccount(5120020100l,"sanu",10000.0);
+		System.out.println(s);
+	}
+}

@@ -1,0 +1,94 @@
+class coupon 
+{
+	String clas;
+	String standby;
+	int mealcode;
+	String dateofredemption;
+	coupon()
+	{
+		
+	}
+	coupon(String clas,String standby,int mealcode,String dateofredemption)
+	{
+		this.clas=clas;
+		this.standby=standby;
+		this.mealcode=mealcode;
+		this.dateofredemption=dateofredemption;
+	}
+	public void display() 
+	{
+		System.out.println("clas is :"+clas);
+		System.out.println("standby is :"+standby);
+		System.out.println("mealcode is :"+mealcode);
+		System.out.println("dateofredemption is :"+dateofredemption);
+	}
+}
+
+class Ticket
+{
+	int ticketcode;
+	int number;
+	coupon c;
+
+	Ticket()
+	{
+		
+	}
+	Ticket(int ticketcode,int number)
+	{
+		this.ticketcode=ticketcode;
+		this.number=number;
+	}
+
+	public void display() 
+	{
+		System.out.println("ticketcode is :"+ticketcode);
+		System.out.println("number is :"+number);
+	}
+
+	public void addCoupon(coupon c)
+	{
+		this.c=c;
+		System.out.println("coupon is added");
+	}
+}
+
+class Customer
+{
+	String name;
+	String dob;
+
+	Customer()
+	{
+		
+	}
+
+	Customer(String name,String dob)
+	{
+		this.name=name;
+		this.dob=dob;
+	}
+
+	public void display()
+	{
+		System.out.println("name is :"+name);
+		System.out.println("dob is :"+dob);
+	}
+
+	Ticket t1=new Ticket(10,1);
+}
+
+class combac
+{
+	public static void main(String[] args)
+	{
+		Ticket t2=new Ticket(20,2);
+		t2.addCoupon(new coupon("ab","two days",3,"14-jan"));
+		t2.display();
+		t2.c.display();
+
+		Customer c=new Customer("raj","19-jan");
+		c.display();
+		c.t1.display();
+	}
+}

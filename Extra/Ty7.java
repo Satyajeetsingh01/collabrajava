@@ -1,0 +1,46 @@
+import java.util.Scanner;
+class Ty7
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("1. ADDITION");
+	    System.out.println("2.SUBTRACTION");
+		System.out.println("3. MULTIPLICATION");
+		System.out.println("4. DIVISION");
+
+		System.out.println("enter your choice");
+		int c=s.nextInt();
+		System.out.println("enter two integer values");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		switch (c)
+		{
+			case 1:
+			{
+				System.out.println("add of two no is"+ (a+b));
+			}
+			break;
+			case 2:
+			{
+				System.out.println("sub of two no is"+ (a-b));
+			}
+			break;
+			case 3:
+			{
+				System.out.println("mul of two no is"+ (a*b));
+			}
+			break;
+			case 4:
+			{
+				System.out.println("div of two no is"+ (a/b));
+			}
+			break;
+			default:
+			{
+				System.out.println("select valid option");
+			}
+		}
+		
+	}
+}

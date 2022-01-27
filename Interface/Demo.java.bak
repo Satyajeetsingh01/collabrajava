@@ -1,0 +1,21 @@
+interface Demo
+{
+	int a=20;
+	void demo2();
+	public static void main(String args[])
+	{
+		System.out.println("hello world"+a);
+	}
+	
+}
+class demo1
+{
+	void demo2()
+	{
+		System.out.println("hello world");
+		
+	}
+	demo1 d=new demo1();
+		d.demo2();
+}
+

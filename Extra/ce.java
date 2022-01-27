@@ -1,0 +1,19 @@
+class ce 
+{
+	public static void main(String[] args) 
+	{
+		int num=254568;
+		int count=0;
+		int ld;
+		while(num>0)
+		{
+			ld=num%10;
+			if(ld%2==0)
+			{
+				count++;
+			}
+			num=num/10;
+		}
+		System.out.println("count of even digits is "+count);
+	}
+}

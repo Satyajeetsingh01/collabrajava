@@ -1,0 +1,42 @@
+//ASSIGNMENT 1
+class Demo 
+{
+	Demo(String s)
+	{
+		super(s);
+	}
+	public void readFile()
+	{
+		System.out.println("rf Thread is executing");
+		try
+		{
+			Thread.sleep(3000);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Exception is handled");
+		}
+		System.out.println("rf Thread is executed");
+	}
+	public void writeFileString()
+	{
+		System.out.println("wfs Thread is executing");
+		try
+		{
+			Thread.sleep(3000);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Exception is handled");
+		}
+		System.out.println("wfs Thread is executed");
+	}
+}
+
+class Driver
+{
+	Thread t1=new Thread(new Demo());
+	Demo d=new Demo("Thread 0");
+	d.WriteFileString();
+
+}

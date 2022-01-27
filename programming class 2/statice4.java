@@ -1,0 +1,30 @@
+//static example 6
+class Demo
+{
+	public static void Static()
+	{
+		System.out.println("static");
+	}
+
+	public static void demo()
+	{
+		System.out.println("static demo");
+	}
+}
+
+class statice4
+{
+	public static void main(String[] args) 
+	{
+		Static(); //CTE
+		demo();  //CTE
+		Demo.Static(); //static
+		Demo.demo();  //demo
+		Demo d=new Demo();
+		d.Static();
+		d.demo(); 
+		System.out.println(Demo.demo()); //CTE void type not allowed here
+		System.out.println(d.demo());    //CTE void type not allowed here
+
+	}
+}

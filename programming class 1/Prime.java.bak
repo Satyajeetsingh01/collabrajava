@@ -1,0 +1,28 @@
+//Question 14 given number is prime or not
+class Prime 
+{
+	public static void main(String[] args) 
+	{
+		int num=19;
+		if(isPrime(num))
+		{
+			System.out.println("prime");
+		}
+			else
+		{
+			System.out.println(" not prime");
+		}
+	}
+
+		public static boolean isPrime(int num)
+	{
+		for(int i=2;i<=num;i++)
+		{
+			if(num%i==0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+}

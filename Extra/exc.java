@@ -1,0 +1,240 @@
+import java.util.Scanner;
+class exc
+{
+	public static void main(String[] args) 
+	{
+		/*byte a=10;
+		short num=a;
+		short num1=(short)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+		/*byte a=10;
+		int num=a;
+		int num1=(int)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+		/*byte a=10;
+		long num=a;
+		long num1=(long)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+
+		/*byte a=10;
+		float num=a;
+		float num1=(float)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+		/*byte a=10;
+		double num=a;
+		double num1=(double)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+
+		/*byte a=10;
+		boolean num=a;
+		boolean num1=(boolean)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+		/*short a=10;
+		byte num1=(byte)a;
+		System.out.println(num1);*/
+
+		/*short a=10;
+		int num=a;
+		int num1=(int)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+
+		/*short a=10;
+		long num=a;
+		long num1=(long)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+
+		/*byte a=10;
+		float num=a;
+		float num1=(float)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+		/*byte a=10;
+		double num=a;
+		double num1=(double)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+		/*byte a=10;
+		boolean num=a;
+		boolean num1=(boolean)a;
+		System.out.println(num);
+		System.out.println(num1);*/
+
+
+		/*char a='a';
+		byte b=(byte)a;
+		System.out.println(b);*/
+
+		/*char a='a';
+		short b=(short)a;
+		System.out.println(b);*/
+
+		/*char a='a';
+		int b=a;
+		int b1=(int)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+
+		/*char a='a';
+		long b=a;
+		long b1=(long)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+
+		/*char a='a';
+		float b=a;
+		float b1=(float)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+		/*char a='a';
+		double b=a;
+		double b1=(double)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+
+		/*char a='a';
+		boolean b=a;
+		boolean b1=(boolean)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+		/*int a=10;
+		byte b=(byte)a;
+		System.out.println(b);*/
+
+		/*int a=10;
+		short b=(short)a;
+		System.out.println(b);*/
+
+		/*int a=100;
+		char b=(char)a;
+		System.out.println(b);*/
+
+		/*int a=100;
+		long b=a;
+		long b1=(long)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+		/*int a=100;
+		float b=a;
+		float b1=(float)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+		/*int a=100;
+		double b=a;
+		double b1=(double)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+		/*int a=100;
+		boolean b=a;
+		boolean b1=(boolean)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+
+		/*long a=100;
+		byte b1=(byte)a;
+		System.out.println(b1);*/
+
+		/*long a=100;
+		short b1=(short)a;
+		System.out.println(b1);*/
+
+		/*long a=100;
+		char b1=(char)a;
+		System.out.println(b1);*/
+
+		/*long a=100;
+		int b1=(int)a;
+		System.out.println(b1);*/
+
+		/*long a=100;
+		float b=a;
+		float b1=(float)a;
+		System.out.println(b1);
+		System.out.println(b);*/
+
+		/*long a=100;
+		double b=a;
+		double b1=(double)a;
+		System.out.println(b1);
+		System.out.println(b);*/
+
+
+		/*float a=100;
+		byte b=(byte)a;
+		System.out.println(b);*/
+
+		/*float a=100;
+		short b=(short)a;
+		System.out.println(b);*/
+
+		/*float a=100;
+		char b=(char)a;
+		System.out.println(b);*/
+
+		/*float a=100;
+		int b=(int)a;
+		System.out.println(b);*/
+
+		/*float a=100;
+		long b=(long)a;
+		System.out.println(b);*/
+
+		/*float a=100;
+		double b1=a;
+		double b=(double)a;
+		System.out.println(b);
+		System.out.println(b1);*/
+
+
+		byte a=100;
+		char b1=(char)a;
+		
+		
+		System.out.println(b1);
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+	}
+}

@@ -1,0 +1,18 @@
+class parent
+{
+	int a=10;
+	int b;
+}
+
+class sli extends parent
+{
+	int c;
+	public static void main(String[] args) 
+	{
+		sli s=new sli();
+		System.out.println(s.a);
+		System.out.println(s.b);
+		System.out.println(s.c);
+
+	}
+}

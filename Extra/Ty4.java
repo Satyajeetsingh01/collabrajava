@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Ty4
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a character");
+		char ch=s.next().charAt(0);
+		check(ch);
+		
+	}
+	public static void check(char ch)
+	{
+		if((ch>='A'&&ch<='Z')||(ch>='A'&&ch<='Z'))
+		{
+			System.out.println("Its a alphabet");
+		}
+		else if(ch>='0'&&ch<='9')
+		{
+			System.out.println("Its a number");
+		}
+		else
+		{
+			System.out.println("Its a special character");
+		}
+	}
+}

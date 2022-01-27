@@ -1,0 +1,11 @@
+class B15
+	{
+		public static void main(String[] args)
+		{
+			System.out.println("main method of b is executing");
+		}
+		public static void m1()
+		{
+			System.out.println(" from class b m1 is executing");
+		}
+	}

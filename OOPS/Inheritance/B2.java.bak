@@ -1,0 +1,21 @@
+class A2
+{
+	int i=10;
+}
+
+class B2 extends A2
+{
+	int j=20;
+	public static void main(String[] args) 
+	{
+		B2 b=new B2();
+		System.out.println(b.i)
+		System.out.println(b.j);
+
+		A2 a = new A2();
+		System.out.println(a.i);
+		System.out.println(a.j);
+
+
+	}
+}

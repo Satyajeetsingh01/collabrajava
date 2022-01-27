@@ -1,0 +1,17 @@
+ static example 3
+class statice2 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(c); // CTE cannot find symbol
+		System.out.println(d); // CTE cannot find symbol
+		System.out.println(Demo.c); //50
+		System.out.println(Demo.d); //100  
+	}
+}
+
+class Demo
+{
+	static int c=50;
+	static int d=100;
+}

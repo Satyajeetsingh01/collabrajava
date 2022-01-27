@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Ty5 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter 1st number");
+		int num=s.nextInt();
+		System.out.println("Enter 2nd number");
+		int num1=s.nextInt();
+		System.out.println("Enter 3rd number");
+		int num2=s.nextInt();
+		largest(num,num1,num2);
+	}
+	public static void largest(int a, int b, int c)
+	{
+		if(a>b&&a>c)
+		{
+			System.out.println(a+" is the largest");
+		}
+		else if(b>c)
+		{
+			System.out.println(b+" is the largest");
+		}
+		else
+		{
+			System.out.println(c+" is the largest");
+		}
+	}
+}

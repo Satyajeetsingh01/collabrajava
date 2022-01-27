@@ -1,0 +1,35 @@
+class Armstrong 
+{
+	public static void main(String[] args) 
+	{
+		int num=153;
+		armstrong(num);
+		
+	}
+	public static void armstrong(int num)
+	{
+		int count=0;
+		int q=0;
+		for(int i=num;i>0;i=i/10)
+		{
+			count++;
+		}
+		for(int i=num;i>0;i=i/10)
+		{
+			int power=1;
+			for(int j=0;j<count;j++)
+			{
+				pow=pow*i%10;
+			}
+			q=q+pow;
+		}
+		if(num==q)
+		{
+			System.out.print("arm");
+		}
+		else
+		{
+			System.out.println("not");
+		}
+	}
+}

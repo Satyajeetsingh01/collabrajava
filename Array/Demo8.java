@@ -1,0 +1,42 @@
+//ASSIGNMENT 8 PRINT THE VALUES WHICH IS PRESENT IN EVEN POSITION AND THEN1 ODD POSITION
+
+import java.util.Scanner;
+class Demo8 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the size");
+		int size=s.nextInt();
+		float na[]=new float[size];
+		float a[]=new float[size];
+		
+		for(int i=0;i<size;i++)
+		{
+			System.out.println("enter the "+(i+1)+"element value");
+			a[i]=s.nextFloat();
+		}
+
+		int n=0;
+		for(int i=0;i<a.length;i++)
+		{
+			if((i+1)%2==0)
+			{
+				na[n++]=a[i];
+			}
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			if((i+1)%2!=0)
+			{
+				na[n++]=a[i];
+			}
+		}
+
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println(na[i]);
+		}
+
+	}
+}

@@ -1,0 +1,29 @@
+//Question 22 check a strong number or not
+class strongno 
+{
+	public static void main(String[] args) 
+	{
+		int num=145;
+		int sum=0;
+		while(num>0)
+		{
+			int temp=num%10;
+			int fact=1;
+			while(temp>0)
+			{
+				fact=fact*temp;
+				temp--;
+			}
+			sum=sum+fact;
+			num=num/10;
+		}
+		if(sum==num)
+		{
+			System.out.println("strong no");
+		}
+		else
+		{
+			System.out.println(" not a strong no");
+		}
+	}
+}

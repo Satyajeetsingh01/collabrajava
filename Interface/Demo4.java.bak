@@ -1,0 +1,24 @@
+//interafce1,class to class
+
+interface Demo
+{
+	int a=10;
+}
+
+class Demo2
+{
+	int b=20;
+}
+
+class Demo4 extends Demo2 implements Demo
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Demo.a);//10
+		Demo2 d=new Demo2()
+		System.out.println(d.b);//20
+	}
+}
+
+
+ 

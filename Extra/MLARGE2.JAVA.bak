@@ -1,0 +1,74 @@
+import java.util.Scanner;
+class MLARGE2 
+{
+	public static void sum(int k,int l)
+	{
+		System.out.println (" sum is: " + (k+l));
+	}
+	public static void sum(int m,int n,int o)
+	{
+		System.out.println (" sum is: " + (m+n+o));
+	}
+	public static void sum(int p,int q,int r,int s)
+	{
+		System.out.println (" sum is: " + (p+q+r+s));
+	}
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("-------Welcome--------");
+		System.out.println("press 1 to add 2 numbers");
+		System.out.println("press 2 to add 3 numbers");
+		System.out.println("press 3 to add 4 numbers");
+		int a= s.nextInt();
+
+		while(a<0)
+		{
+			if(a==1)
+			{
+				System.out.println("enter two number");
+				int b= s.nextInt();
+				int c= s.nextInt();
+				sum(b,c);
+			}
+			else if(a==2)
+			{
+				System.out.println("enter three number");
+				int d= s.nextInt();
+				int e= s.nextInt();
+				int f= s.nextInt();
+				sum(d,e,f);
+			}
+			else if(a==3)
+			{
+				System.out.println("enter four number");
+				int g= s.nextInt();
+				int h= s.nextInt();
+				int i= s.nextInt();
+				int j= s.nextInt();
+				sum(g,h,i,j);
+			}
+			else if(a<1 || a>3)
+			{
+				System.out.println("-----invalid choice------");
+			}
+			System.out.println("press 1 for continue");
+			System.out.println("press any other number to stop");
+			int t= s.nextInt();
+			if(t==1)
+			{
+				System.out.println(" Press 1 to add 2 numbers");
+				System.out.println(" Press 2 to add 3 numbers");
+				System.out.println(" Press 3 to add 4 numbers");
+				int u=s. nextInt();
+				a=u;
+				continue;
+			}
+			else if(t>1 || t<1)
+			{
+				System.out.println("-------Thank you---------");
+				break;
+			}
+		}
+	}
+}

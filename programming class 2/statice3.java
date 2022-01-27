@@ -1,0 +1,24 @@
+//static example 5
+class statice3
+{
+	public static void Static()
+	{
+		System.out.println("static");
+	}
+
+	public static void demo()
+	{
+		System.out.println("static demo");
+	}
+	public static void main(String[] args) 
+	{
+		Static();  //static
+		demo();  //static demo
+		statice3.Static(); ////static
+		statice3.demo(); ////static demo
+		statice3 s=new statice3();
+		s.Static(); ////static
+		s.demo();  ////static demo 
+
+	}
+}

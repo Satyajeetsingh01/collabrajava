@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Ty12
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter 1st number");
+		int m=s.nextInt();
+		System.out.println("Enter 2nd number");
+		int n=s.nextInt();
+		Loop(m,n);
+	}
+	public static void Loop(int a, int b)
+	{
+		int i=a;
+		int sum=0;
+		while(i<=b)
+		{
+			sum=sum+i;
+			i++;
+		}
+		System.out.println(sum);
+	}
+}

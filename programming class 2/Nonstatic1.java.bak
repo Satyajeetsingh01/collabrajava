@@ -1,0 +1,26 @@
+//Nonstatic example 1
+class Nonstatic1 
+{
+	int a;
+	int b=20;
+	static
+	{
+		int c=20;
+	}
+	public static void demo() 
+	{
+		int d=20;
+		//System.out.println(a); //CTE  non-static variable 'a' cannot be referenced from a static context
+	}
+
+	public static void main(String[] args) 
+	{
+		//System.out.println(a);  //CTE  non-static variable 'a' cannot be referenced from a static context
+		Nonstatic1 n=new Nonstatic1();
+		//System.out.println(n.a); //0
+		//System.out.println(n.b);  //20
+		//System.out.println(n.c);  //CTE cannot find symbol
+		//System.out.println(n.d);  //CTE cannot find symbol
+		System.out.println(n.demo());
+	}
+}

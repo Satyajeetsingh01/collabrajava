@@ -1,0 +1,64 @@
+class A
+{
+	 static void demo() 
+	{
+		System.out.println("A");
+	}
+}
+
+class B extends A
+{
+	protected static void demo() 
+	{
+		System.out.println("B");
+	}
+}
+
+class C extends B
+{
+	public static void demo() 
+	{
+		System.out.println("C");
+	}
+}
+
+class Driver1
+{
+	public static void main(String[] args) 
+	{
+		A obj1=new A();
+		obj1.demo();
+		System.out.println("=============");
+
+		A obj2=new B();
+		obj2.demo();
+		System.out.println("=============");
+
+		A obj3=new C();
+		obj3.demo();
+		System.out.println("=============");
+
+		/*B obj4=new A();
+		obj4.demo();                                O/P= CCE
+		System.out.println("=============");*/
+
+		B obj5=new B();
+		obj5.demo();
+		System.out.println("=============");
+
+		B obj6=new C();
+		obj6.demo();
+		System.out.println("=============");
+
+		/*C obj7=new A();
+		obj7.demo();                                 O/P= CCE
+		System.out.println("============="); */
+
+		/*C obj7=new B();
+		obj7.demo();                                 O/P= CCE
+		System.out.println("=============");*/
+
+		C obj7=new C();
+		obj6.demo();
+	}
+}

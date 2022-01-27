@@ -1,0 +1,142 @@
+import java.util.Scanner;
+abstract class Ball
+{
+	private int radius;
+	public int getRadius() 
+	{
+		return radius;
+	}
+
+	public void setRadius(int radius)
+	{
+		this.radius=radius;
+	}
+	abstract public void showGame();
+}
+
+class Basketball extends Ball
+{
+	String game="BasketBall";
+
+	public void showGame()
+	{
+		System.out.println("you can play basketball game");
+	}
+}
+
+class Tennisball extends Ball
+{
+	String game="Tennisball";
+	public void showGame()
+	{
+		System.out.println("you can play Tennisball game");
+	}
+}
+
+class Bag
+{
+	Ball ball;
+	
+	void addBall(Ball ball)
+	{
+		this.ball=ball;
+		System.out.println("ball is added");
+	}
+
+	void removeBall()
+	{
+		ball=null;
+		System.out.println("ball is removed");
+	}
+
+	void bagIsEmpty()
+	{
+		if(ball==null)
+		{
+			System.out.println("Bag is empty");
+		}
+		else
+		{
+			System.out.println("Bag is not empty");
+		}
+		
+	}
+
+	void showGame()
+	{
+		ball.showGame();
+	}
+}
+
+class Driver0
+{
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		Bag b=new Bag();
+		boolean flag=true;
+		
+		do
+		{
+			System.out.println("===================================");
+			System.out.println("welcome select below option");
+			System.out.println("---------------------------");
+			System.out.println("1.ADD BALL");
+			System.out.println("2.REMOVE BALL");
+			System.out.println("3.CHECK BAG IS EMPTY OR NOT");
+			System.out.println("4.SHOW GAME THAT CAN BE PLAYED");
+			System.out.println("5.EXIT");
+			System.out.println("====================================");
+
+			int opt=s.nextInt();
+			switch(opt)
+			{
+				case 1:
+				{
+					System.out.println("1.Basketball"+"\n"+"2. Tennnis ball");
+					System.out.println("please enter your choice");
+					int s1=s.nextInt();
+					switch(s1)
+					{
+						case 1:
+						{
+							b.addBall(new Basketball());
+						}
+						break;
+
+						case 2:
+						{
+							b.addBall(new Tennisball());
+						}
+						break;
+					}
+				}
+				break;
+
+				case 2:
+				{
+					b.removeBall();
+				}
+				break;
+
+				case 3:
+				{
+					b.bagIsEmpty();
+				}
+				break;
+
+				case 4:
+				{
+					b.showGame();
+				}
+				break;
+
+				case 5:
+				{
+					flag=false;
+				}
+			}
+		}
+		while (flag);
+	}
+}

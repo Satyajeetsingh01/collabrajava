@@ -1,0 +1,20 @@
+class Parent 
+{
+	static int a=40;
+	int b;
+	public static void demo() 
+	{
+
+	}
+
+	public static void temp()
+	{
+		
+	}
+}
+
+class Child
+{
+	int c;
+	static int d=40;
+}

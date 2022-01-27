@@ -1,0 +1,31 @@
+// ASSIGNMENT 6 STORE 5 FLOAT VALUES AND COPY  THE SAME ARRAY VALUES INTO NEW ARRAY AND PRINT THE VALUES WITH THE HELP OF NEW ARRAY 
+
+import java.util.Scanner;
+class Demo6  
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the size");
+		int size=s.nextInt();
+		float f[]=new float[size];
+		float f1[]=new float[size];
+		
+		for(int i=0;i<size;i++)
+		{
+			System.out.println("enter the "+(i+1)+"element value");
+			f[i]=s.nextFloat();
+		}
+		System.out.println();
+
+		for(int i=0;i<f.length;i++)
+		{
+			f1[i]=f[i];
+		}
+		for(int i=0;i<f.length;i++)
+		{
+			System.out.println(f1[i]);
+		}
+
+	}
+}

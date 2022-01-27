@@ -1,0 +1,14 @@
+//Question 6 print digits in agiven number
+class digits
+{
+	public static void main(String[] args) 
+	{
+		int num=256;
+		while(num>0)
+		{
+		int d=num%10;
+		System.out.println(d);
+		num=num/10;
+		}	
+	}
+}

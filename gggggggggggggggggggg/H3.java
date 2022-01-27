@@ -1,0 +1,78 @@
+//ASSIGNMENET  
+import java.util.*;
+
+public class H3
+{
+	public static void main(String[] args) 
+	{
+		TreeMap<Book,Author> t=new TreeMap<>();
+		t.put(new Book(5,"the end","sanu"),new Author("raj",2,"rrrrrr"));
+		t.put(new Book(2,"the rend","ranu"),new Author("ram",5,"ssssss"));
+		t.put(new Book(4,"the ernnd","tanu"),new Author("ajay",9,"ttttt"));
+		t.put(new Book(3,"the nnd","KAnu"),new Author("RAajay",8,"ttUUt"));
+		t.put(new Book(1,"the ernnd","tanu"),null);
+		 
+		System.out.println("It is stored in linked hashMap");
+		System.out.println(t);
+
+		//convert to HashMap
+		HashMap m=new HashMap(t);
+		System.out.println("It is stored in hash Map");
+		System.out.println(m);
+
+		//convert to TreeMap
+		TreeMap p=new TreeMap(t);
+		System.out.println("It is stored in Tree Map");
+		System.out.println(p);
+
+		//convert to Hashtable
+		Hashtable h=new Hashtable(t);
+		System.out.println("It is stored in hash table");
+		System.out.println(h);
+		
+	}
+}
+class Book implements Comparable
+{
+	int bid;
+	String title;
+	String author;
+
+	public Book(int bid,String title,String author)
+	{
+		super();
+		this.bid=bid;
+		this.title=title;
+		this.author=author;
+	}
+
+	public String toString()
+	{
+		return "book[bid"+bid+",title="+title+",author="+author+"]";
+	}
+
+	public int compareTo(Object o)
+	{
+		Book b=(Book)o;
+		return this.bid-b.bid;
+	}
+}
+
+class Author
+{
+	String name;
+	int h_no;
+	String address;
+
+	public Author(String name,int h_no,String address)
+	{
+		this.name=name;
+		this.h_no=h_no;
+		this.address=address;
+	}
+	@Override
+	public String toString()
+	{
+		return "Author[name="+name+",house no"+h_no+",address"+address+"]";
+	}
+}

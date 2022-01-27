@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Ty2
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the details of 1st student");
+		double p1=s.nextDouble();
+		String n1=s.nextLine();
+
+		System.out.println("Enter the details of 2nd student");
+		double p2=s.nextDouble();
+		String n2=s.nextLine();
+
+		String str=compare(p1,n1,p2,n2);
+		System.out.println(str);
+
+	}
+	public static String compare(double p1, String n1, double p2, String n2)
+	{
+		String str=p1>p2?n1:n2;
+		return str;
+	}
+
+}

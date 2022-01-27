@@ -1,0 +1,14 @@
+//same pacakge program for CLASS A
+
+package pack6;
+public class Demo6
+{
+	public static void main(String[] args) 
+	{
+		A d=new A();
+		
+		System.out.println(d.a);
+		System.out.println(d.b);
+		//d.demo();
+	}
+}
